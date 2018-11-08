@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Zip/Compression/Streams
+END
+InflaterInputStream.cs
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Zip/Compression/Streams/InflaterInputStream.cs
+END
+DeflaterOutputStream.cs
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Zip/Compression/Streams/DeflaterOutputStream.cs
+END
+StreamManipulator.cs
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Zip/Compression/Streams/StreamManipulator.cs
+END
+OutputWindow.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Zip/Compression/Streams/OutputWindow.cs
+END

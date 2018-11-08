@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Checksums
+END
+IChecksum.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Checksums/IChecksum.cs
+END
+StrangeCRC.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Checksums/StrangeCRC.cs
+END
+Adler32.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Checksums/Adler32.cs
+END
+CRC32.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Checksums/CRC32.cs
+END

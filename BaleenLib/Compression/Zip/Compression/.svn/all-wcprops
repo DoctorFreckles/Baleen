@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Zip/Compression
+END
+DeflaterHuffman.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Zip/Compression/DeflaterHuffman.cs
+END
+DeflaterPending.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Zip/Compression/DeflaterPending.cs
+END
+DeflaterEngine.cs
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Zip/Compression/DeflaterEngine.cs
+END
+PendingBuffer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Zip/Compression/PendingBuffer.cs
+END
+DeflaterConstants.cs
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Zip/Compression/DeflaterConstants.cs
+END
+Inflater.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Zip/Compression/Inflater.cs
+END
+Deflater.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Zip/Compression/Deflater.cs
+END
+InflaterDynHeader.cs
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Zip/Compression/InflaterDynHeader.cs
+END
+InflaterHuffmanTree.cs
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Zip/Compression/InflaterHuffmanTree.cs
+END

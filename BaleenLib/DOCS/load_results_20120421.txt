@@ -1,0 +1,19 @@
+After this test, I feel comfortable with a load factor of 2.75 (roughly). Fully Indexed, Fully Loaded, and using a VARIETY of data structures for comparison. I think this is a solid number for any estimate of space requirements.
+
+Remember, 'load factor' is the multiplier applied to the 'raw data' in text file form. So, for SNP, if SNP is 100 GIGS in raw form, it will take 275 GIGS of space to store SNP using this approach (once loaded into SQL Server).
+
+Single Process, Single Thread (linear time performance), If we had to process all the RAW DATA from Amalga, which I would estimate at 20,000 GIGS (20 TB). At a rate of 2.24 gigs per hour (this could be scaled horizontally you know, multiple computers and multiple processes simultaneously), It would take 8,000 hours (or 372 days) using my home PC (of course this is silly, my computer is ridiculously underpowered for something this big). But, take the 372 as a baseline and assume an environment 50 times greater in capacity (horizontally and vertically -- time and space), at a performance multiplier of 50 (which seems reasonable given the capacity of most IT/Healthcare shops at the Terabyte scale of storage and server type), it would take about a week to load the data.
+
+
+OS: Windows Vista
+Computer: Dell, Inspiron, 6 GIGS of RAM, QUAD CORE Intel, 2.4 GHz
+Process Type: Bulk Load, Single Thread, Single Process
+Start Time: 4/20/2012 11:59 PM
+End Time: 4/21/2012 2:34 AM
+Time Elapsed: 2 Hours and 35 Minutes 
+Number Of Databases Created: 4
+Number Of Files: 28
+Total Raw Data: 5.64 GB
+Data Size Loaded and Indexed: (440 MB + 440 MB + 7.4 GB + 7.3 GB) == (approximately) 15.5 / load factor = 2.75
+Time To Generate Meta Data File: 7 minutes and 6 seconds
+Time To Generate Base Views: < 10 seconds

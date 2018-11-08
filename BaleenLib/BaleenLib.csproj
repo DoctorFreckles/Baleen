@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5A8F1659-8E96-4D35-9ACD-3DCE50DC468D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BaleenLib</RootNamespace>
+    <AssemblyName>BaleenLib</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp, Version=5.0.5.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.JScript" />
+    <Reference Include="Microsoft.Vsa" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Management.Automation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Program Files\Reference Assemblies\Microsoft\WindowsPowerShell\v1.0\System.Management.Automation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AtomizingParser.cs" />
+    <Compile Include="ATOM_SET_DATA_OPS\GetMetaData.cs" />
+    <Compile Include="ConvertFileToDataTable.cs" />
+    <Compile Include="PortalData\SimpleDAL.cs" />
+    <Compile Include="AutoGenBaleenSetView.cs" />
+    <Compile Include="BaleenAgent.cs" />
+    <Compile Include="BaleenQuery.cs" />
+    <Compile Include="BSETViewGenerator.cs" />
+    <Compile Include="Compression\BZip2\BZip2.cs" />
+    <Compile Include="Compression\BZip2\BZip2Constants.cs" />
+    <Compile Include="Compression\BZip2\BZip2Exception.cs" />
+    <Compile Include="Compression\BZip2\BZip2InputStream.cs" />
+    <Compile Include="Compression\BZip2\BZip2OutputStream.cs" />
+    <Compile Include="Compression\Checksums\Adler32.cs" />
+    <Compile Include="Compression\Checksums\CRC32.cs" />
+    <Compile Include="Compression\Checksums\IChecksum.cs" />
+    <Compile Include="Compression\Checksums\StrangeCRC.cs" />
+    <Compile Include="Compression\Core\FileSystemScanner.cs" />
+    <Compile Include="Compression\Core\INameTransform.cs" />
+    <Compile Include="Compression\Core\IScanFilter.cs" />
+    <Compile Include="Compression\Core\NameFilter.cs" />
+    <Compile Include="Compression\Core\PathFilter.cs" />
+    <Compile Include="Compression\Core\StreamUtils.cs" />
+    <Compile Include="Compression\Encryption\PkzipClassic.cs" />
+    <Compile Include="Compression\GZip\GZIPConstants.cs" />
+    <Compile Include="Compression\GZip\GZipException.cs" />
+    <Compile Include="Compression\GZip\GzipInputStream.cs" />
+    <Compile Include="Compression\GZip\GzipOutputStream.cs" />
+    <Compile Include="Compression\SharpZipBaseException.cs" />
+    <Compile Include="Compression\Tar\InvalidHeaderException.cs" />
+    <Compile Include="Compression\Tar\TarArchive.cs" />
+    <Compile Include="Compression\Tar\TarBuffer.cs" />
+    <Compile Include="Compression\Tar\TarEntry.cs" />
+    <Compile Include="Compression\Tar\TarException.cs" />
+    <Compile Include="Compression\Tar\TarHeader.cs" />
+    <Compile Include="Compression\Tar\TarInputStream.cs" />
+    <Compile Include="Compression\Tar\TarOutputStream.cs" />
+    <Compile Include="Compression\Zip\Compression\Deflater.cs" />
+    <Compile Include="Compression\Zip\Compression\DeflaterConstants.cs" />
+    <Compile Include="Compression\Zip\Compression\DeflaterEngine.cs" />
+    <Compile Include="Compression\Zip\Compression\DeflaterHuffman.cs" />
+    <Compile Include="Compression\Zip\Compression\DeflaterPending.cs" />
+    <Compile Include="Compression\Zip\Compression\Inflater.cs" />
+    <Compile Include="Compression\Zip\Compression\InflaterDynHeader.cs" />
+    <Compile Include="Compression\Zip\Compression\InflaterHuffmanTree.cs" />
+    <Compile Include="Compression\Zip\Compression\PendingBuffer.cs" />
+    <Compile Include="Compression\Zip\Compression\Streams\DeflaterOutputStream.cs" />
+    <Compile Include="Compression\Zip\Compression\Streams\InflaterInputStream.cs" />
+    <Compile Include="Compression\Zip\Compression\Streams\OutputWindow.cs" />
+    <Compile Include="Compression\Zip\Compression\Streams\StreamManipulator.cs" />
+    <Compile Include="Compression\Zip\FastZip.cs" />
+    <Compile Include="Compression\Zip\IEntryFactory.cs" />
+    <Compile Include="Compression\Zip\ZipConstants.cs" />
+    <Compile Include="Compression\Zip\ZipEntry.cs" />
+    <Compile Include="Compression\Zip\ZipEntryFactory.cs" />
+    <Compile Include="Compression\Zip\ZipException.cs" />
+    <Compile Include="Compression\Zip\ZipExtraData.cs" />
+    <Compile Include="Compression\Zip\ZipFile.cs" />
+    <Compile Include="Compression\Zip\ZipHelperStream.cs" />
+    <Compile Include="Compression\Zip\ZipInputStream.cs" />
+    <Compile Include="Compression\Zip\ZipNameTransform.cs" />
+    <Compile Include="Compression\Zip\ZipOutputStream.cs" />
+    <Compile Include="AtomSetParser.cs" />
+    <Compile Include="GenerateFieldListing.cs" />
+    <Compile Include="ParseWarDiary.cs" />
+    <Compile Include="SetEngineParser2.cs" />
+    <Compile Include="DictionaryParser.cs" />
+    <Compile Include="DictionaryQueries.cs" />
+    <Compile Include="FastDW.cs" />
+    <Compile Include="GenerateBaleenMetaData.cs" />
+    <Compile Include="HubAndSpokeParser.cs" />
+    <Compile Include="EmailAgent.cs" />
+    <Compile Include="Email\Base64EncodingHelper.cs" />
+    <Compile Include="Email\DataBus.cs" />
+    <Compile Include="Email\GeoLocation.cs" />
+    <Compile Include="Email\Pop3Client.cs" />
+    <Compile Include="Email\Pop3Exception.cs" />
+    <Compile Include="Email\Pop3Message.cs" />
+    <Compile Include="Email\SessionManager.cs" />
+    <Compile Include="Email\SmtpConnect.cs" />
+    <Compile Include="GlobParser2.cs" />
+    <Compile Include="FastDataWarehouse.cs" />
+    <Compile Include="FileSplit.cs" />
+    <Compile Include="GlobParser.cs" />
+    <Compile Include="Logic\JScript\Exec.cs" />
+    <Compile Include="Logic\Prolog\PrologServices.cs" />
+    <Compile Include="NpiDAL.cs" />
+    <Compile Include="ParseAndSeparate.cs" />
+    <Compile Include="Logic\Powershell\PowerShellAction.cs" />
+    <Compile Include="PredicateParser.cs" />
+    <Compile Include="Logic\Prolog\LogicEngine.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RectangularParser.cs" />
+    <Compile Include="RegexHelper.cs" />
+    <Compile Include="SetEngineParser.cs" />
+    <Compile Include="SimpleIndex.cs" />
+    <Compile Include="SimplifiedDataWarehouse.cs" />
+    <Compile Include="SplitNPIParse.cs" />
+    <Compile Include="UI\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Query.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Query.Designer.cs">
+      <DependentUpon>Query.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utility.cs" />
+    <Compile Include="VectoraParser.cs" />
+    <Compile Include="ZipFiles.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DOCS\BAK_20120319.zip" />
+    <None Include="DOCS\BaleenAnalyticTool_1.docx" />
+    <None Include="DOCS\help.docx" />
+    <None Include="help.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="SQL\baleen_vectora.sql" />
+    <None Include="SQL\baleen_vectora10.sql" />
+    <None Include="SQL\baleen_vectora11.sql" />
+    <None Include="SQL\baleen_vectora2.sql" />
+    <None Include="SQL\baleen_vectora3.sql" />
+    <None Include="SQL\baleen_vectora4.sql" />
+    <None Include="SQL\baleen_vectora5.sql" />
+    <None Include="SQL\baleen_vectora6.sql" />
+    <None Include="SQL\baleen_vectora7.sql" />
+    <None Include="SQL\baleen_vectora8.sql" />
+    <None Include="SQL\baleen_vectora9.sql" />
+    <None Include="SQL\baleen_vectora9_provider.sql" />
+    <None Include="SQL\baleen_vectora_npi_0.sql" />
+    <None Include="SQL\baleen_vectora_npi_1.sql" />
+    <None Include="SQL\baleen_vectora_npi_2.sql" />
+    <None Include="SQL\BLNX.sql" />
+    <None Include="SQL\bulk_insert_dictionary.sql" />
+    <None Include="SQL\bulk_insert_dictionary2.sql" />
+    <None Include="SQL\bulk_insert_predicate.sql" />
+    <None Include="SQL\cardinality_thresholds.sql" />
+    <None Include="SQL\clear.sql" />
+    <None Include="SQL\clear_HNS.sql" />
+    <None Include="SQL\create_common_ontology_space.sql" />
+    <None Include="SQL\create_common_ontology_space2.sql" />
+    <None Include="SQL\create_common_ontology_space3.sql" />
+    <None Include="SQL\create_common_ontology_space4.sql" />
+    <None Include="SQL\create_common_ontology_space5.sql" />
+    <None Include="SQL\create_common_ontology_space6.sql" />
+    <None Include="SQL\create_common_ontology_space7.sql" />
+    <None Include="SQL\create_common_ontology_space8.sql" />
+    <None Include="SQL\create_common_ontology_space9.sql" />
+    <None Include="SQL\create_db.sql" />
+    <None Include="SQL\create_npi.sql" />
+    <None Include="SQL\dictionary_db.sql" />
+    <None Include="SQL\dictionary_db2.sql" />
+    <None Include="SQL\dictionary_db3.sql" />
+    <None Include="SQL\dictionary_db4.sql" />
+    <None Include="SQL\dictionary_db5.sql" />
+    <None Include="SQL\dict_query_20120318.sql" />
+    <None Include="SQL\dict_query_20120318b.sql" />
+    <None Include="SQL\dict_query_20120318c.sql" />
+    <None Include="SQL\example_vectora_query.sql" />
+    <None Include="SQL\glob2_20120119.sql" />
+    <None Include="SQL\hub_and_spoke_0.sql" />
+    <None Include="SQL\hub_and_spoke_1.sql" />
+    <None Include="SQL\load_dict_db.sql" />
+    <None Include="SQL\parse_queries.sql" />
+    <None Include="SQL\SQLQuery10.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BSET_LIST.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Compression\obj\Debug\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="Compression\obj\Debug\ICSharpCode.SharpZipLib.pdb" />
+    <Content Include="Compression\obj\Debug\ICSharpCode.SharpZLib.csproj.FileListAbsolute.txt" />
+    <Content Include="Compression\obj\Debug\Refactor\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="Compression\obj\ICSharpCode.SharpZLib.csproj.FileList.txt" />
+    <Content Include="Compression\obj\ICSharpCode.SharpZLib.csproj.FileListAbsolute.txt" />
+    <Content Include="Compression\obj\Release\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="Compression\obj\Release\ICSharpCode.SharpZLib.csproj.FileListAbsolute.txt" />
+    <Content Include="field_type_lookup.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="LIB\object_list.htm" />
+    <Content Include="LIB\itextsharp.dll" />
+    <Content Include="LIB\table_template.htm" />
+    <Content Include="LIB\w32pl5213.exe" />
+    <Content Include="SIMPLE_META.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UI\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserControls\Query.resx">
+      <DependentUpon>Query.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Compression\obj\Debug\TempPE\" />
+    <Folder Include="Compression\obj\Release\TempPE\" />
+    <Folder Include="UI\UserControls\CustomZones\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

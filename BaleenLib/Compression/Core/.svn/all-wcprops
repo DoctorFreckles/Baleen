@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Core
+END
+StreamUtils.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Core/StreamUtils.cs
+END
+FileSystemScanner.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Core/FileSystemScanner.cs
+END
+PathFilter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Core/PathFilter.cs
+END
+IScanFilter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Core/IScanFilter.cs
+END
+INameTransform.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Core/INameTransform.cs
+END
+NameFilter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Core/NameFilter.cs
+END

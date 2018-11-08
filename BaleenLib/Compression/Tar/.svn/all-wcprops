@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Tar
+END
+InvalidHeaderException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Tar/InvalidHeaderException.cs
+END
+TarHeader.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Tar/TarHeader.cs
+END
+TarBuffer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Tar/TarBuffer.cs
+END
+TarInputStream.cs
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Tar/TarInputStream.cs
+END
+TarOutputStream.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Tar/TarOutputStream.cs
+END
+TarException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Tar/TarException.cs
+END
+TarArchive.cs
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Tar/TarArchive.cs
+END
+TarEntry.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Tar/TarEntry.cs
+END

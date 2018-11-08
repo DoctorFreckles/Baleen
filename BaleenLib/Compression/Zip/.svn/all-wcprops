@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Zip
+END
+ZipEntryFactory.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Zip/ZipEntryFactory.cs
+END
+ZipHelperStream.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Zip/ZipHelperStream.cs
+END
+ZipInputStream.cs
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Zip/ZipInputStream.cs
+END
+ZipConstants.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Zip/ZipConstants.cs
+END
+ZipNameTransform.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Zip/ZipNameTransform.cs
+END
+ZipOutputStream.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Zip/ZipOutputStream.cs
+END
+FastZip.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Zip/FastZip.cs
+END
+ZipExtraData.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Zip/ZipExtraData.cs
+END
+ZipException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Zip/ZipException.cs
+END
+IEntryFactory.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Zip/IEntryFactory.cs
+END
+ZipFile.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Zip/ZipFile.cs
+END
+ZipEntry.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/Enablecomp/!svn/ver/7/SymphonyCalculation2/BusinessObjects/Compression/Zip/ZipEntry.cs
+END

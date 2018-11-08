@@ -1,0 +1,10 @@
+E:\PROJECTS\Symphony\SharpZipLib\bin\ICSharpCode.SharpZipLib.dll
+E:\PROJECTS\Symphony\SharpZipLib\bin\ICSharpCode.SharpZipLib.pdb
+E:\PROJECTS\Symphony\SharpZipLib\src\obj\Debug\ResolveAssemblyReference.cache
+E:\PROJECTS\Symphony\SharpZipLib\src\obj\Debug\ICSharpCode.SharpZipLib.dll
+E:\PROJECTS\Symphony\SharpZipLib\src\obj\Debug\ICSharpCode.SharpZipLib.pdb
+E:\PROJECTS\SymphonyUtility\SharpZipLib\bin\ICSharpCode.SharpZipLib.dll
+E:\PROJECTS\SymphonyUtility\SharpZipLib\bin\ICSharpCode.SharpZipLib.pdb
+E:\PROJECTS\SymphonyUtility\SharpZipLib\src\obj\Debug\ResolveAssemblyReference.cache
+E:\PROJECTS\SymphonyUtility\SharpZipLib\src\obj\Debug\ICSharpCode.SharpZipLib.dll
+E:\PROJECTS\SymphonyUtility\SharpZipLib\src\obj\Debug\ICSharpCode.SharpZipLib.pdb

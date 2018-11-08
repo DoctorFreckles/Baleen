@@ -1,0 +1,12 @@
+C:\PROJECTS\Enforcer2\SharpZipLib\bin\ICSharpCode.SharpZipLib.dll
+C:\PROJECTS\Enforcer2\SharpZipLib\bin\ICSharpCode.SharpZipLib.pdb
+C:\PROJECTS\Enforcer2\SharpZipLib\src\obj\Debug\ResolveAssemblyReference.cache
+C:\PROJECTS\Enforcer2\SharpZipLib\src\obj\Debug\ICSharpCode.SharpZipLib.dll
+C:\PROJECTS\Enforcer2\SharpZipLib\src\obj\Debug\ICSharpCode.SharpZipLib.pdb
+C:\projects\client projects\EnableComp\Enforcer\SharpZipLib\bin\ICSharpCode.SharpZipLib.dll
+C:\projects\client projects\EnableComp\Enforcer\SharpZipLib\src\obj\Release\ResolveAssemblyReference.cache
+C:\projects\client projects\EnableComp\Enforcer\SharpZipLib\src\obj\Release\ICSharpCode.SharpZipLib.dll
+C:\projects\client projects\EnableComp\Enforcer\SharpZipLib\bin\ICSharpCode.SharpZipLib.pdb
+C:\projects\client projects\EnableComp\Enforcer\SharpZipLib\src\obj\Debug\ResolveAssemblyReference.cache
+C:\projects\client projects\EnableComp\Enforcer\SharpZipLib\src\obj\Debug\ICSharpCode.SharpZipLib.dll
+C:\projects\client projects\EnableComp\Enforcer\SharpZipLib\src\obj\Debug\ICSharpCode.SharpZipLib.pdb

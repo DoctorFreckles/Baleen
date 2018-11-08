@@ -1,0 +1,172 @@
+--create view vw_set_state_name
+--as
+--SELECT     common_dictionary.type_value, SUM(common_dictionary.cardinality) as cardinality
+--FROM         common_dictionary 
+--INNER JOIN
+--vw_type_uniqueness 
+--ON common_dictionary.type_name = vw_type_uniqueness.type_name
+--where common_dictionary.type_name like '%state name%'
+--group by common_dictionary.type_value
+
+--create view vw_set_taxonomy
+--as
+--SELECT     common_dictionary.type_value, SUM(common_dictionary.cardinality) as cardinality
+--FROM         common_dictionary 
+--INNER JOIN
+--vw_type_uniqueness 
+--ON common_dictionary.type_name = vw_type_uniqueness.type_name
+--where common_dictionary.type_name like '%taxonomy code%'
+--group by common_dictionary.type_value
+
+--create view vw_set_country_code
+--as
+--SELECT     common_dictionary.type_value, SUM(common_dictionary.cardinality) as cardinality
+--FROM         common_dictionary 
+--INNER JOIN
+--vw_type_uniqueness 
+--ON common_dictionary.type_name = vw_type_uniqueness.type_name
+--where common_dictionary.type_name like '%country code%'
+--group by common_dictionary.type_value
+
+
+--create view vw_set_entity_type_code
+--as
+--SELECT     common_dictionary.type_value, SUM(common_dictionary.cardinality) as cardinality
+--FROM         common_dictionary 
+--INNER JOIN
+--vw_type_uniqueness 
+--ON common_dictionary.type_name = vw_type_uniqueness.type_name
+--where common_dictionary.type_name like '%entity type code%'
+--group by common_dictionary.type_value
+
+--create view vw_set_provider_gender_code
+--as
+--SELECT     common_dictionary.type_value, SUM(common_dictionary.cardinality) as cardinality
+--FROM         common_dictionary 
+--INNER JOIN
+--vw_type_uniqueness 
+--ON common_dictionary.type_name = vw_type_uniqueness.type_name
+--where common_dictionary.type_name = 'provider gender code'
+--group by common_dictionary.type_value
+
+--create view vw_set_last_update_year_month
+--as
+--SELECT     (cast(common_dictionary.as_year as varchar(5)) + '-'
+-- + cast(common_dictionary.as_month as varchar(3)) ) as [type_value], 
+-- SUM(common_dictionary.cardinality) as cardinality
+--FROM         common_dictionary 
+--INNER JOIN
+--vw_type_uniqueness 
+--ON common_dictionary.type_name = vw_type_uniqueness.type_name
+--where common_dictionary.type_name = 'LAST UPDATE DATE'
+--group by common_dictionary.as_year, common_dictionary.as_month
+
+--create view vw_set_is_sole_proprietor
+--as
+--SELECT     common_dictionary.type_value, SUM(common_dictionary.cardinality) as cardinality
+--FROM         common_dictionary 
+--INNER JOIN
+--vw_type_uniqueness 
+--ON common_dictionary.type_name = vw_type_uniqueness.type_name
+--where common_dictionary.type_name = 'is sole proprietor'
+--group by common_dictionary.type_value
+
+--create view vw_set_provider_credential_text
+--as
+--SELECT     common_dictionary.type_value, SUM(common_dictionary.cardinality) as cardinality
+--FROM         common_dictionary 
+--INNER JOIN
+--vw_type_uniqueness 
+--ON common_dictionary.type_name = vw_type_uniqueness.type_name
+--where common_dictionary.type_name = 'PROVIDER CREDENTIAL TEXT'
+--group by common_dictionary.type_value
+
+--create view vw_set_provider_taxonomy_group
+--as
+--SELECT     common_dictionary.type_value, SUM(common_dictionary.cardinality) as cardinality
+--FROM         common_dictionary 
+--INNER JOIN
+--vw_type_uniqueness 
+--ON common_dictionary.type_name = vw_type_uniqueness.type_name
+--where common_dictionary.type_name like '%PROVIDER TAXONOMY GROUP%'
+--group by common_dictionary.type_value
+
+--create view vw_set_primary_taxonomy_switch
+--as
+--SELECT     common_dictionary.type_value, SUM(common_dictionary.cardinality) as cardinality
+--FROM         common_dictionary 
+--INNER JOIN
+--vw_type_uniqueness 
+--ON common_dictionary.type_name = vw_type_uniqueness.type_name
+--where common_dictionary.type_name like '%primary taxonomy switch%'
+--group by common_dictionary.type_value
+
+--create view vw_set_provider_name_prefix
+--as
+--SELECT     common_dictionary.type_value, SUM(common_dictionary.cardinality) as cardinality
+--FROM         common_dictionary 
+--INNER JOIN
+--vw_type_uniqueness 
+--ON common_dictionary.type_name = vw_type_uniqueness.type_name
+--where common_dictionary.type_name like '%provider name prefix%'
+--group by common_dictionary.type_value
+
+--create view vw_set_official_title
+--as
+--SELECT     common_dictionary.type_value, SUM(common_dictionary.cardinality) as cardinality
+--FROM         common_dictionary 
+--INNER JOIN
+--vw_type_uniqueness 
+--ON common_dictionary.type_name = vw_type_uniqueness.type_name
+--where common_dictionary.type_name = 'AUTHORIZED OFFICIAL TITLE OR POSITION'
+--group by common_dictionary.type_value
+
+--create view vw_set_provider_license_state_code
+--as
+--SELECT     common_dictionary.type_value, SUM(common_dictionary.cardinality) as cardinality
+--FROM         common_dictionary 
+--INNER JOIN
+--vw_type_uniqueness 
+--ON common_dictionary.type_name = vw_type_uniqueness.type_name
+--where common_dictionary.type_name like '%PROVIDER LICENSE NUMBER STATE CODE%'
+--group by common_dictionary.type_value
+
+--create view vw_set_provider_license_state_code
+--as
+--SELECT     common_dictionary.type_value, SUM(common_dictionary.cardinality) as cardinality
+--FROM         common_dictionary 
+--INNER JOIN
+--vw_type_uniqueness 
+--ON common_dictionary.type_name = vw_type_uniqueness.type_name
+--where common_dictionary.type_name like '%PROVIDER LICENSE NUMBER STATE CODE%'
+--group by common_dictionary.type_value
+
+--create view vw_set_provider_enumeration_year_month
+--as
+--SELECT     (cast(common_dictionary.as_year as varchar(5)) + '-'
+-- + cast(common_dictionary.as_month as varchar(3)) ) as [type_value], 
+-- SUM(common_dictionary.cardinality) as cardinality
+--FROM         common_dictionary 
+--INNER JOIN
+--vw_type_uniqueness 
+--ON common_dictionary.type_name = vw_type_uniqueness.type_name
+--where common_dictionary.type_name = 'PROVIDER ENUMERATION DATE'
+--group by common_dictionary.as_year, common_dictionary.as_month
+
+--('AUTHORIZED OFFICIAL LAST NAME',
+--'PROVIDER LAST NAME (LEGAL NAME)',
+--'PROVIDER OTHER LAST NAME')
+
+--create view vw_set_first_name
+--as
+--SELECT     common_dictionary.type_value, SUM(common_dictionary.cardinality) as cardinality
+--FROM         common_dictionary 
+--INNER JOIN
+--vw_type_uniqueness 
+--ON common_dictionary.type_name = vw_type_uniqueness.type_name
+--where common_dictionary.type_name 
+--in
+--('AUTHORIZED OFFICIAL FIRST NAME',
+--'PROVIDER FIRST NAME',
+--'PROVIDER OTHER FIRST NAME')
+--group by common_dictionary.type_value
