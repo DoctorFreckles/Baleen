@@ -1,0 +1,10 @@
+/home/daniel/Desktop/REPOS/Baleen/MySQL.Baleen/MySQL.Baleen/bin/Debug/MySQL.Baleen.exe
+/home/daniel/Desktop/REPOS/Baleen/MySQL.Baleen/MySQL.Baleen/bin/Debug/MySQL.Baleen.pdb
+/home/daniel/Desktop/REPOS/Baleen/MySQL.Baleen/MySQL.Baleen/bin/Debug/itextsharp.dll
+/home/daniel/Desktop/REPOS/Baleen/MySQL.Baleen/MySQL.Baleen/bin/Debug/MySql.Data.dll
+/home/daniel/Desktop/REPOS/Baleen/MySQL.Baleen/MySQL.Baleen/bin/Debug/Google.Protobuf.dll
+/home/daniel/Desktop/REPOS/Baleen/MySQL.Baleen/MySQL.Baleen/bin/Debug/MySql.Data.xml
+/home/daniel/Desktop/REPOS/Baleen/MySQL.Baleen/MySQL.Baleen/obj/x86/Debug/MySQL.Baleen.csproj.CoreCompileInputs.cache
+/home/daniel/Desktop/REPOS/Baleen/MySQL.Baleen/MySQL.Baleen/obj/x86/Debug/MySQL.Baleen.csproj.CopyComplete
+/home/daniel/Desktop/REPOS/Baleen/MySQL.Baleen/MySQL.Baleen/obj/x86/Debug/MySQL.Baleen.exe
+/home/daniel/Desktop/REPOS/Baleen/MySQL.Baleen/MySQL.Baleen/obj/x86/Debug/MySQL.Baleen.pdb

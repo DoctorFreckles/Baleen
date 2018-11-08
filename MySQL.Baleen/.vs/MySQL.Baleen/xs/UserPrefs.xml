@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{A9A6CBF1-F681-425B-A701-D727675900AA}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MySQL.Baleen/Utility.cs">
+    <Files>
+      <File FileName="MySQL.Baleen/Program.cs" Line="15" Column="83" />
+      <File FileName="MySQL.Baleen/Utility.cs" Line="41" Column="14" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/home/daniel/Desktop/REPOS/Baleen/MySQL.Baleen/MySQL.Baleen/Utility.cs" relfile="MySQL.Baleen/Utility.cs" line="46" column="1" />
+      <Breakpoint file="/home/daniel/Desktop/REPOS/Baleen/MySQL.Baleen/MySQL.Baleen/Program.cs" relfile="MySQL.Baleen/Program.cs" line="18" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.MySQL.Baleen PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
