@@ -134,15 +134,6 @@ LOAD DATA INFILE '{f.FullName}' INTO TABLE `{NewDBName}`.`{tableName}` IGNORE 1 
             int minYear,
             int maxYear)
         {
-            string selectSavePath = "SELECT @@GLOBAL.secure_file_priv;";
-
-            MySqlConnection c = new MySqlConnection(sqlAdminConnection);
-            c.Open();
-            MySqlCommand cmd = new MySqlCommand(selectSavePath, c);
-            object val = cmd.ExecuteScalar();
-
-            workingDirectory = new DirectoryInfo(val.ToString());
-
             if (!Directory.Exists(dbSourcesPath)) return;
             DirectoryInfo di = new DirectoryInfo(dbSourcesPath);
             DirectoryInfo[] dirs = di.GetDirectories();
