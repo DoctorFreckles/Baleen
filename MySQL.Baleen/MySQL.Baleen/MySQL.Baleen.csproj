@@ -52,6 +52,7 @@
     <Compile Include="Utility.cs" />
     <Compile Include="RegexHelper.cs" />
     <Compile Include="FileSplitter.cs" />
+    <Compile Include="LoadMySqlDumpFiles.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="field_type_lookup.txt" />

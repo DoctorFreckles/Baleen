@@ -9,9 +9,21 @@ namespace MySQL.Baleen
 
         public static void Main(string[] args)
         {
+            TestMysqlDump();
             //TestFileSplitter();
-            SimpleTest();
+            //SimpleTest();
             //TestMysqlConnection();
+        }
+        static void TestSplitMysqlDumpData()
+        {
+            LoadMySqlDumpFiles.SplitDataFile("/home/daniel/Desktop/npi_0_data.sql", 100000);
+        }
+        static void TestMysqlDump()
+        {
+
+
+            //LoadMySqlDumpFiles.LoadFiles(data, db, svr, port, usr, pw);
+
         }
         static void TestFileSplitter()
         {

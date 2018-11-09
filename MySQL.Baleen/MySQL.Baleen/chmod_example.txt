@@ -1,0 +1,3 @@
+chmod +x  my_script.sh //add execute permission
+
+-- remember sudo on running ...

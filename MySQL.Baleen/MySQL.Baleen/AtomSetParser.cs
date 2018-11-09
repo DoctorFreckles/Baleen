@@ -12,7 +12,6 @@ namespace BaleenLib
 {
     public class AtomSetParser
     {
-        public static DirectoryInfo workingDir = new DirectoryInfo("/var/lib/mysql-files/");
         public static string GetCreateBsetTable(string tableName)
         {
 
@@ -33,7 +32,7 @@ As_Millisecond   int,
 As_Double    double,
 As_Long  bigint,
 As_Bool  TINYINT(1),
-YMD_hms_Key int,
+YMD_hms_Key bigint,
 PRIMARY KEY (Line_ID)
 ) ENGINE=MyISAM;
 

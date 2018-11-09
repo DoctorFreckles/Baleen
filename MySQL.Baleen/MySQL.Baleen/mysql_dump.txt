@@ -1,0 +1,8 @@
+sudo mysqldump -u root --databases BAL_NPI_0 --tables [tablename] > /to/path/tablename.sql;
+
+
+sudo mysqldump --no-data -u root BAL_NPI_0 > /home/daniel/Desktop/npi_0_schema.sql
+
+
+sudo mysqldump -u root --databases BAL_NPI_0 > /home/daniel/Desktop/npi_0_data.sql
+
