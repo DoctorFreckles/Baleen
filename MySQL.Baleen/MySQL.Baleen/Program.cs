@@ -9,7 +9,7 @@ namespace MySQL.Baleen
 
         public static void Main(string[] args)
         {
-            TestMysqlDump();
+            //TestMysqlDump();
             //TestFileSplitter();
             //SimpleTest();
             //TestMysqlConnection();
@@ -20,10 +20,7 @@ namespace MySQL.Baleen
         }
         static void TestMysqlDump()
         {
-
-
             //LoadMySqlDumpFiles.LoadFiles(data, db, svr, port, usr, pw);
-
         }
         static void TestFileSplitter()
         {
