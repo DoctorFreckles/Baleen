@@ -16,7 +16,7 @@ namespace MySQL.Baleen
         static void TestFileSplitter()
         {
             string filePath = "/home/daniel/Desktop/NPI/npi_data_20181108.qcsv";
-            int parts = 20;
+            int parts = 10;
             string newDirectory = "/home/daniel/Desktop/NPI/split";
             string newFilePrefix = "NPI";
             BaleenLib.FileSplitter.SimpleWithHeader(
@@ -32,8 +32,10 @@ namespace MySQL.Baleen
         }
         public static void SimpleTest()
         {
+            //remember: this uses an admin connection to
+            //Mysql to work, it needs to create databases
             AtomSetParser.AtomizeDirectories(
-                "/home/daniel/Desktop/NPI/split",
+                "/home/daniel/Desktop/NPI/split/",
                 true,
                 MySqlStr,
                 60 * 60 * 12,

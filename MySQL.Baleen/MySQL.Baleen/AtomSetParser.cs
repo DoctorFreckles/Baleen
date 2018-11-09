@@ -12,12 +12,12 @@ namespace BaleenLib
 {
     public class AtomSetParser
     {
-
+        public static DirectoryInfo workingDir = new DirectoryInfo("/var/lib/mysql-files/");
         public static string GetCreateBsetTable(string tableName)
         {
 
         return $@"
-        
+       
 create table `{tableName}`
 (
 Line_ID bigint not null,  
@@ -39,7 +39,7 @@ PRIMARY KEY (Line_ID)
 
 ";
         }
-        private static DirectoryInfo workingDirectory = null; 
+
         private static Regex CSVandQUOTESplit =
             new Regex(@""",""", RegexOptions.Compiled);
         private static string[] CsvQuoteSplit(string ln)
@@ -52,7 +52,6 @@ PRIMARY KEY (Line_ID)
         public static void BulkLoadAtomizedFiles(
             string loadFolder, 
             string NewDBNameIn, 
-            string MDFLocation, 
             string SqlServerConnection,
             int LoadTimeout)
         {
@@ -94,7 +93,7 @@ PRIMARY KEY (Line_ID)
 
                     string sqlLoadTable = $@"
                 
-LOAD DATA INFILE '{f.FullName}' INTO TABLE `{NewDBName}`.`{tableName}` IGNORE 1 LINES;
+LOAD DATA local INFILE '{f.FullName}' INTO TABLE `{NewDBName}`.`{tableName}` IGNORE 1 LINES;
 
 ";
                     string sqlCreateTable = GetCreateBsetTable(tableName);
@@ -140,15 +139,12 @@ LOAD DATA INFILE '{f.FullName}' INTO TABLE `{NewDBName}`.`{tableName}` IGNORE 1 
             foreach (DirectoryInfo d in dirs)
             {
                 Console.WriteLine("Building DB:" + d.Name);
-                AtomizeDirectory(d.FullName, createDB, d.FullName + "\\", sqlAdminConnection, loadTimeout, minYear, maxYear);
-                //this is removed to work below
-                break;
+                AtomizeDirectory(d.FullName, createDB, sqlAdminConnection, loadTimeout, minYear, maxYear);
             }
         }
         public static void AtomizeDirectory(
             string sourceDirectoryPath, 
-            bool createDB, 
-            string MDFLocation,
+            bool createDB,
             string sqlAdminConnection,
             int loadTimeout,
             int minYear,
@@ -172,7 +168,9 @@ LOAD DATA INFILE '{f.FullName}' INTO TABLE `{NewDBName}`.`{tableName}` IGNORE 1 
 
             File.WriteAllText(sourceDirectoryPath + "/create_baleen_sets.start", DateTime.Now.ToString());
 
-            string atomFiles = workingDirectory.FullName + "/BALEEN_DATA/" + di.Name + "/";
+            string atomFiles = sourceDirectoryPath + "/baleen/";
+
+            //string atomFiles = workingDir.FullName + "/" + Guid.NewGuid().ToString() + "_";
 
             foreach (FileInfo f in fins)
             {
@@ -192,7 +190,7 @@ LOAD DATA INFILE '{f.FullName}' INTO TABLE `{NewDBName}`.`{tableName}` IGNORE 1 
 
             if (createDB)
             {
-                BulkLoadAtomizedFiles(atomFiles, di.Name, MDFLocation, sqlAdminConnection, loadTimeout);
+                BulkLoadAtomizedFiles(atomFiles, di.Name, sqlAdminConnection, loadTimeout);
             }
 
             File.WriteAllText(sourceDirectoryPath + "/max_object_id.ido", objectID.ToString());
@@ -258,10 +256,12 @@ LOAD DATA INFILE '{f.FullName}' INTO TABLE `{NewDBName}`.`{tableName}` IGNORE 1 
             int minYear,
             int maxYear)
         {
-            if (!Directory.Exists(AtomFiles))
+            if(Directory.Exists(AtomFiles))
             {
-                Directory.CreateDirectory(AtomFiles);
+                Directory.Delete(AtomFiles, true);
             }
+
+            Directory.CreateDirectory(AtomFiles);
 
             FileInfo f = new FileInfo(sourceFile);
 
@@ -324,10 +324,6 @@ LOAD DATA INFILE '{f.FullName}' INTO TABLE `{NewDBName}`.`{tableName}` IGNORE 1 
                     {
                         Console.WriteLine("Processing File: " + f.Name);
                         Console.WriteLine("Fact Processing Object ID: " + objectID.ToString());
-
-
-                        if (objectID == 1000) break;
-
                     }
                     string datLine = sr.ReadLine();
                     string[] dat = null;
@@ -364,7 +360,7 @@ LOAD DATA INFILE '{f.FullName}' INTO TABLE `{NewDBName}`.`{tableName}` IGNORE 1 
 
                             if (d.Length < 1) continue;
 
-                            string wKey = "BSET_" + f.Name
+                            string wKey = f.Name
                                 .Replace(f.Extension, "")
                                 .ToUpper()
                                 .Trim()
@@ -380,9 +376,29 @@ LOAD DATA INFILE '{f.FullName}' INTO TABLE `{NewDBName}`.`{tableName}` IGNORE 1 
                                 .Replace(' ', '_')
                                 .Replace("__", "_");
 
+                            if (wKey.Length > 64)
+                            {
+                                //"BSET_NPI_0-PROVIDER_BUSINESS_MAILING_ADDRESS_COUNTRY_CODE_IF_OUTSIDE_U_S"
+
+                                wKey = wKey.Replace("PROVIDER", "PROVDR")
+                                           .Replace("BUSINESS", "BUS")
+                                           .Replace("MAILING","MAIL")
+                                           .Replace("ADDRESS","ADDR")
+                                           .Replace("COUNTRY", "CNTRY")
+                                           .Replace("OUTSIDE", "OUTSD")
+                                           .Replace("PRIMARY", "PRI")
+                                           .Replace("LOCATION", "LOC");
+
+                                if(wKey.Length > 64)
+                                {
+                                    throw new Exception("wKey Table name: " + wKey + ", will be too long.");
+                                }
+                            }
+
                             if (!writers.ContainsKey(wKey))
                             {
-                                string wn = AtomFiles + wKey + ".TAB";
+                                string wn = AtomFiles + "/" + wKey + ".TAB";
+
                                 writers.Add(wKey, new StreamWriter(wn));
                                 writers[wKey].Write("Line_ID");
                                 writers[wKey].Write('\t');
