@@ -1,15 +1,19 @@
 ﻿<Properties StartupConfiguration="{A9A6CBF1-F681-425B-A701-D727675900AA}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MySQL.Baleen/Utility.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MySQL.Baleen/AtomSetParser.cs">
     <Files>
-      <File FileName="MySQL.Baleen/Program.cs" Line="15" Column="83" />
-      <File FileName="MySQL.Baleen/Utility.cs" Line="41" Column="14" />
+      <File FileName="MySQL.Baleen/Program.cs" Line="35" Column="31" />
+      <File FileName="MySQL.Baleen/Utility.cs" Line="1712" Column="10" />
+      <File FileName="MySQL.Baleen/AtomSetParser.cs" Line="277" Column="46" />
+      <File FileName="MySQL.Baleen/FileSplitter.cs" Line="54" Column="26" />
+      <File FileName="MySQL.Baleen/field_type_lookup.txt" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/home/daniel/Desktop/REPOS/Baleen/MySQL.Baleen/MySQL.Baleen/Utility.cs" relfile="MySQL.Baleen/Utility.cs" line="46" column="1" />
-      <Breakpoint file="/home/daniel/Desktop/REPOS/Baleen/MySQL.Baleen/MySQL.Baleen/Program.cs" relfile="MySQL.Baleen/Program.cs" line="18" column="1" />
+      <Breakpoint file="/home/daniel/Desktop/REPOS/Baleen/MySQL.Baleen/MySQL.Baleen/AtomSetParser.cs" relfile="MySQL.Baleen/AtomSetParser.cs" line="100" column="1" />
+      <Breakpoint file="/home/daniel/Desktop/REPOS/Baleen/MySQL.Baleen/MySQL.Baleen/AtomSetParser.cs" relfile="MySQL.Baleen/AtomSetParser.cs" line="85" column="1" />
+      <Breakpoint file="/home/daniel/Desktop/REPOS/Baleen/MySQL.Baleen/MySQL.Baleen/AtomSetParser.cs" relfile="MySQL.Baleen/AtomSetParser.cs" line="73" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.MySQL.Baleen PreferredExecutionTarget="MonoDevelop.Default" />

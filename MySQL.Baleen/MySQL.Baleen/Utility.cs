@@ -12,6 +12,7 @@ using System.Text.RegularExpressions;
 using iTextSharp.text.pdf;
 using System.Security.Cryptography;
 using System.Xml;
+using System.Reflection;
 using System.Xml.Linq;
 using System.Net.Mail;
 using MySql.Data.MySqlClient;
@@ -52,7 +53,20 @@ namespace BaleenLib.Utility
         private static Dictionary<string, string> FTLookup = new Dictionary<string, string>();
         static FieldTypeLookup()
         {
-            string[] lns = File.ReadAllLines("field_type_lookup.txt");
+            var assembly = Assembly.GetExecutingAssembly();
+            var resourceName = "MySQL.Baleen.field_type_lookup.txt";
+            List<string> lnstr = new List<string>();
+            using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+            using (StreamReader reader = new StreamReader(stream))
+            {
+                while(!reader.EndOfStream)
+                {
+                    lnstr.Add(reader.ReadLine());
+                }
+                //string result = reader.ReadToEnd();
+            }
+            //string[] lns = File.ReadAllLines("field_type_lookup.txt");
+            string[] lns = lnstr.ToArray<string>();
             for (int i = 1; i < lns.Length; i++)
             {
                 string[] parts = lns[i].Split('\t');

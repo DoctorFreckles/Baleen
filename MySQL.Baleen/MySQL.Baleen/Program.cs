@@ -9,8 +9,22 @@ namespace MySQL.Baleen
 
         public static void Main(string[] args)
         {
+            //TestFileSplitter();
             SimpleTest();
             //TestMysqlConnection();
+        }
+        static void TestFileSplitter()
+        {
+            string filePath = "/home/daniel/Desktop/NPI/npi_data_20181108.qcsv";
+            int parts = 20;
+            string newDirectory = "/home/daniel/Desktop/NPI/split";
+            string newFilePrefix = "NPI";
+            BaleenLib.FileSplitter.SimpleWithHeader(
+            filePath,
+            parts,
+            newDirectory,
+                newFilePrefix);
+
         }
         static void TestMysqlConnection()
         {
@@ -18,17 +32,13 @@ namespace MySQL.Baleen
         }
         public static void SimpleTest()
         {
-            //string mysqlConn = "";
-
             AtomSetParser.AtomizeDirectories(
-                @"C:\test\",
-                true, 
+                "/home/daniel/Desktop/NPI/split",
+                true,
                 MySqlStr,
                 60 * 60 * 12,
-                1899, 
+                1899,
                 2099);
-
-
         }
     }
 }

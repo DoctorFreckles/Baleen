@@ -51,6 +51,10 @@
     <Compile Include="AtomSetParser.cs" />
     <Compile Include="Utility.cs" />
     <Compile Include="RegexHelper.cs" />
+    <Compile Include="FileSplitter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="field_type_lookup.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
